@@ -9,7 +9,7 @@
 <ion-content padding>
   <ion-card *ngFor="let casa of casas">
     <!-- {{nombre | json}} -->
-    <img *ngIf= "casa.ad.hasOwnProperty('thumbnail')" src='https://www.segundamano.mx/medium/{{casa.ad.thumbnail.path}}'>
+    <img *ngIf= "casa.ad.hasOwnProperty('thumbnail')" src='https://img.segundamano.mx/medium/{{casa.ad.thumbnail.path}}'>
     <ion-card-header *ngIf="casa.ad.hasOwnProperty('list_price')">
       {{casa.ad.list_price.label }}
     </ion-card-header>
